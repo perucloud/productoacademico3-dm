@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    PRODUCTO ACADÉMICO 3
+    Esta pantalla contiene el formulario principal de la aplicación.
+    Permite ingresar nombre, correo y mensaje.
+    También contiene los botones para guardar y mostrar los datos.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F7FA">
+
+    <!-- Título principal de la aplicación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Mensajes"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1B3A57"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Texto informativo para el usuario -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese los datos solicitados"
+        android:textSize="16sp"
+        android:textColor="#5F6B76"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo para ingresar el nombre -->
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para ingresar el correo electrónico -->
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo para ingresar el mensaje -->
+    <EditText
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Mensaje"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="14dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón para guardar los datos en Firebase Realtime Database -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Botón para recuperar y mostrar los datos almacenados en Firebase -->
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MOSTRAR REGISTROS"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!--
+        ListView donde se mostrarán los registros
+        recuperados desde Firebase Realtime Database
+    -->
+    <ListView
+        android:id="@+id/listaDatos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

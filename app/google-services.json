@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "549221541021",
+    "project_id": "pa3pjev",
+    "storage_bucket": "pa3pjev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549221541021:android:4eefe093ac587e85a02074",
+        "android_client_info": {
+          "package_name": "continental.pjev.productoacademico3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE2xOopS5bqJjepYSSjrPwlg1__ewXNp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
